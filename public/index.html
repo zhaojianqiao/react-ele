@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <title>React App</title>
+    <script type="text/javascript">
+        (function(psdw){
+            var dpr=0 , rem=0 , scale=0;
+            var htmlDOM=document.documentElement;
+            dpr=window.devicePixelRatio;
+            var currentWidth=htmlDOM.clientWidth;
+            scale=currentWidth/psdw;
+            rem=psdw/10;
+            rem=rem*scale;
+            htmlDOM.style.fontSize=rem+'px';
+            htmlDOM.setAttribute('data-dpr',dpr)
+        })(750)
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
